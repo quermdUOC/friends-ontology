@@ -1,0 +1,1885 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/"
+     versionIRI="http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/">
+    <Prefix name="" IRI="http://www.semanticweb.org/quer/ontologies/2022/3/Friends-ontology/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:created"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-16T12:00:00</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Quer Masagué Deu</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal>Friends TV Series ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal>Quer Masagué Deu</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+        <IRI>http://creativecommons.org/licenses/by/2.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.7</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InSeriesFictionalCharacter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InSeriesSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Job"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Platform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Series"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TelevisionEpisode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TelevisionSeason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wedding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CharacterAppearsInEpisode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="EpisdodeHasCharacter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMaster"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isMasterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBrother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEpisode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLover"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOwner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParticipants"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSeason"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEpisodeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFriendOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMarriedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOwnerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPortraierOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSeasonOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#livesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#livesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#takesPlaceIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/portrayer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasEpisodeSynopsis"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasEpisodeTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPetName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPlatformName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBirthdate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEmissionDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEpisodeNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGenre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNationality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfEpisodes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfSeasons"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSeasonEnd"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSeasonNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSeasonStart"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSynopsis"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTitle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Joey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MatLeBlanc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="NBC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="S03E21"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CentralPerk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chick"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Friends"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JenniferAniston"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RachelGreen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#S01E01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Season9"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="http://dbpedia.org/ontology/County"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="http://dbpedia.org/ontology/Gender"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isPortraierOf"/>
+            <Class IRI="#Character"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isMasterOf"/>
+            <Class IRI="#Pet"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrother"/>
+            <Class IRI="#Character"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isFriendOf"/>
+            <Class IRI="#Character"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isOwnerOf"/>
+            <Class IRI="#Place"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#livesIn"/>
+            <Class IRI="#Place"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#livesWith"/>
+            <Class IRI="#Character"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#participatesIn"/>
+            <Class IRI="#Event"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#worksIn"/>
+            <Class IRI="#Place"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="https://dbpedia.org/ontology/portrayer"/>
+            <Class IRI="#Actor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#isMarriedWith"/>
+            <Class IRI="#Character"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasParticipants"/>
+            <Class IRI="#Character"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InSeriesFictionalCharacter"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InSeriesFictionalCharacter"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="https://dbpedia.org/ontology/portrayer"/>
+            <Class IRI="#Character"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasNationality"/>
+            <Datatype IRI="http://dbpedia.org/ontology/County"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasBirthdate"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pet"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasMaster"/>
+            <Class IRI="#Character"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOwner"/>
+            <Class IRI="#Character"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Platform"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="hasPlatformName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#takesPlaceIn"/>
+            <Class IRI="#Place"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Series"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSeason"/>
+            <Class IRI="#TelevisionSeason"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Series"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasGenre"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Series"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasNumberOfSeasons"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Series"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasSynopsis"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Series"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasTitle"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelevisionEpisode"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isEpisodeOf"/>
+            <Class IRI="#TelevisionSeason"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelevisionEpisode"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="hasEpisodeSynopsis"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelevisionEpisode"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="hasEpisodeTitle"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelevisionEpisode"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasEmissionDate"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelevisionEpisode"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasDuration"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelevisionEpisode"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasEpisodeNumber"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelevisionSeason"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEpisode"/>
+            <Class IRI="#TelevisionEpisode"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelevisionSeason"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isSeasonOf"/>
+            <Class IRI="#Series"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelevisionSeason"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasSeasonNumber"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelevisionSeason"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasSeasonEnd"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelevisionSeason"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasSeasonStart"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wedding"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wedding"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#hasParticipants"/>
+            <Class IRI="#Character"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Actor"/>
+        <Class IRI="#Character"/>
+        <Class IRI="#InSeriesFictionalCharacter"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Event"/>
+        <Class IRI="#InSeriesSeries"/>
+        <Class IRI="#Job"/>
+        <Class IRI="#Person"/>
+        <Class IRI="#Pet"/>
+        <Class IRI="#Place"/>
+        <Class IRI="#Platform"/>
+        <Class IRI="#Plot"/>
+        <Class IRI="#Series"/>
+        <Class IRI="#TelevisionEpisode"/>
+        <Class IRI="#TelevisionSeason"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Event"/>
+        <Class IRI="#InSeriesSeries"/>
+        <Class IRI="#Job"/>
+        <Class IRI="#Place"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="Joey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="MatLeBlanc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Platform"/>
+        <NamedIndividual IRI="NBC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TelevisionEpisode"/>
+        <NamedIndividual IRI="S03E21"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Place"/>
+        <NamedIndividual IRI="#CentralPerk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pet"/>
+        <NamedIndividual IRI="#Chick"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Series"/>
+        <NamedIndividual IRI="#Friends"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#JenniferAniston"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#RachelGreen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TelevisionEpisode"/>
+        <NamedIndividual IRI="#S01E01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TelevisionSeason"/>
+        <NamedIndividual IRI="#Season1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TelevisionSeason"/>
+        <NamedIndividual IRI="#Season10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TelevisionSeason"/>
+        <NamedIndividual IRI="#Season2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TelevisionSeason"/>
+        <NamedIndividual IRI="#Season3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TelevisionSeason"/>
+        <NamedIndividual IRI="#Season4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TelevisionSeason"/>
+        <NamedIndividual IRI="#Season5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TelevisionSeason"/>
+        <NamedIndividual IRI="#Season6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TelevisionSeason"/>
+        <NamedIndividual IRI="#Season7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TelevisionSeason"/>
+        <NamedIndividual IRI="#Season8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TelevisionSeason"/>
+        <NamedIndividual IRI="#Season9"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="Joey"/>
+        <NamedIndividual IRI="MatLeBlanc"/>
+        <NamedIndividual IRI="NBC"/>
+        <NamedIndividual IRI="S03E21"/>
+        <NamedIndividual IRI="#CentralPerk"/>
+        <NamedIndividual IRI="#Chick"/>
+        <NamedIndividual IRI="#Friends"/>
+        <NamedIndividual IRI="#JenniferAniston"/>
+        <NamedIndividual IRI="#RachelGreen"/>
+        <NamedIndividual IRI="#S01E01"/>
+        <NamedIndividual IRI="#Season1"/>
+        <NamedIndividual IRI="#Season10"/>
+        <NamedIndividual IRI="#Season2"/>
+        <NamedIndividual IRI="#Season3"/>
+        <NamedIndividual IRI="#Season4"/>
+        <NamedIndividual IRI="#Season5"/>
+        <NamedIndividual IRI="#Season6"/>
+        <NamedIndividual IRI="#Season7"/>
+        <NamedIndividual IRI="#Season8"/>
+        <NamedIndividual IRI="#Season9"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMasterOf"/>
+        <NamedIndividual IRI="Joey"/>
+        <NamedIndividual IRI="#Chick"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="Joey"/>
+        <NamedIndividual IRI="#RachelGreen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/portrayer"/>
+        <NamedIndividual IRI="Joey"/>
+        <NamedIndividual IRI="MatLeBlanc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPortraierOf"/>
+        <NamedIndividual IRI="MatLeBlanc"/>
+        <NamedIndividual IRI="Joey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isEpisodeOf"/>
+        <NamedIndividual IRI="S03E21"/>
+        <NamedIndividual IRI="#Season3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasMaster"/>
+        <NamedIndividual IRI="#Chick"/>
+        <NamedIndividual IRI="Joey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeason"/>
+        <NamedIndividual IRI="#Friends"/>
+        <NamedIndividual IRI="#Season1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeason"/>
+        <NamedIndividual IRI="#Friends"/>
+        <NamedIndividual IRI="#Season10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeason"/>
+        <NamedIndividual IRI="#Friends"/>
+        <NamedIndividual IRI="#Season2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeason"/>
+        <NamedIndividual IRI="#Friends"/>
+        <NamedIndividual IRI="#Season3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeason"/>
+        <NamedIndividual IRI="#Friends"/>
+        <NamedIndividual IRI="#Season4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeason"/>
+        <NamedIndividual IRI="#Friends"/>
+        <NamedIndividual IRI="#Season5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeason"/>
+        <NamedIndividual IRI="#Friends"/>
+        <NamedIndividual IRI="#Season6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeason"/>
+        <NamedIndividual IRI="#Friends"/>
+        <NamedIndividual IRI="#Season7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeason"/>
+        <NamedIndividual IRI="#Friends"/>
+        <NamedIndividual IRI="#Season8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeason"/>
+        <NamedIndividual IRI="#Friends"/>
+        <NamedIndividual IRI="#Season9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPortraierOf"/>
+        <NamedIndividual IRI="#JenniferAniston"/>
+        <NamedIndividual IRI="#RachelGreen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#RachelGreen"/>
+        <NamedIndividual IRI="Joey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/portrayer"/>
+        <NamedIndividual IRI="#RachelGreen"/>
+        <NamedIndividual IRI="#JenniferAniston"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isEpisodeOf"/>
+        <NamedIndividual IRI="#S01E01"/>
+        <NamedIndividual IRI="#Season1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEpisode"/>
+        <NamedIndividual IRI="#Season1"/>
+        <NamedIndividual IRI="#S01E01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSeasonOf"/>
+        <NamedIndividual IRI="#Season1"/>
+        <NamedIndividual IRI="#Friends"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSeasonOf"/>
+        <NamedIndividual IRI="#Season10"/>
+        <NamedIndividual IRI="#Friends"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSeasonOf"/>
+        <NamedIndividual IRI="#Season2"/>
+        <NamedIndividual IRI="#Friends"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEpisode"/>
+        <NamedIndividual IRI="#Season3"/>
+        <NamedIndividual IRI="S03E21"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSeasonOf"/>
+        <NamedIndividual IRI="#Season3"/>
+        <NamedIndividual IRI="#Friends"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSeasonOf"/>
+        <NamedIndividual IRI="#Season4"/>
+        <NamedIndividual IRI="#Friends"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSeasonOf"/>
+        <NamedIndividual IRI="#Season5"/>
+        <NamedIndividual IRI="#Friends"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSeasonOf"/>
+        <NamedIndividual IRI="#Season6"/>
+        <NamedIndividual IRI="#Friends"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSeasonOf"/>
+        <NamedIndividual IRI="#Season7"/>
+        <NamedIndividual IRI="#Friends"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSeasonOf"/>
+        <NamedIndividual IRI="#Season8"/>
+        <NamedIndividual IRI="#Friends"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSeasonOf"/>
+        <NamedIndividual IRI="#Season9"/>
+        <NamedIndividual IRI="#Friends"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="Joey"/>
+        <Literal datatypeIRI="http://dbpedia.org/ontology/Gender">Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="Joey"/>
+        <Literal>Joey Tribbiani</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthdate"/>
+        <NamedIndividual IRI="MatLeBlanc"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1967-07-25T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="MatLeBlanc"/>
+        <Literal datatypeIRI="http://dbpedia.org/ontology/Gender">Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="MatLeBlanc"/>
+        <Literal>Matthew Steven &quot;Matt&quot; LeBlanc</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPlatformName"/>
+        <NamedIndividual IRI="NBC"/>
+        <Literal>NBC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasEpisodeSynopsis"/>
+        <NamedIndividual IRI="S03E21"/>
+        <Literal>Pete offers Monica the head chef job at a new restaurant he just bought, but she suspects he is using it to woo her. When he insists he is over her and has met someone else, Phoebe correctly surmises he is lying. While Pete and Monica inspect the restaurant, Monica realizes Pete&apos;s true motive, then surprisingly discovers she has genuine feelings for him. Joey and Chandler adopt a chick and a duck. When Rachel struggles to get ready for a work event due to a broken rib, Ross tries to assist her, then ultimately skips being on a panel for the Discovery Channel to take her to a hospital when he realizes she is in too much pain to attend the event. This leaves her touched by what he gave up to help her, and she is left feeling positive about him for the first time in a long time.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasEpisodeTitle"/>
+        <NamedIndividual IRI="S03E21"/>
+        <Literal>The One With A Chick And A Duck</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDuration"/>
+        <NamedIndividual IRI="S03E21"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEmissionDate"/>
+        <NamedIndividual IRI="S03E21"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1997-04-17T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEpisodeNumber"/>
+        <NamedIndividual IRI="S03E21"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#CentralPerk"/>
+        <Literal>Central Perk</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPetName"/>
+        <NamedIndividual IRI="#Chick"/>
+        <Literal>Chick</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Friends"/>
+        <Literal>Sitcom</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumberOfSeasons"/>
+        <NamedIndividual IRI="#Friends"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSynopsis"/>
+        <NamedIndividual IRI="#Friends"/>
+        <Literal>Episodes depict the friends comedic and romantic adventures and career issues.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#Friends"/>
+        <Literal>Friends</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthdate"/>
+        <NamedIndividual IRI="#JenniferAniston"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1969-02-11T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#JenniferAniston"/>
+        <Literal datatypeIRI="http://dbpedia.org/ontology/Gender">Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#JenniferAniston"/>
+        <Literal>Jennifer Aniston</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#RachelGreen"/>
+        <Literal datatypeIRI="http://dbpedia.org/ontology/Gender">Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#RachelGreen"/>
+        <Literal>Rachel Green</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasEpisodeSynopsis"/>
+        <NamedIndividual IRI="#S01E01"/>
+        <Literal>After leaving her fiancé, Barry, at the altar, Rachel finds herself in Central Perk Café, soaking wet in her wedding dress, looking for her old friend Monica. Rachel ends up moving into Monica&apos;s New York apartment. Chandler and Joey, who live across the hall from Monica, console Ross after his wife Carol, has just left him for a woman. Monica, a chef, falls for &quot;Paul the Wine Guy&quot; only to be crushed that their night of passion was merely a one-night stand. The gang urge Rachel to be more independent by cutting up her father&apos;s credit cards. Rachel, who has never worked before, is offered a waitress job at Central Perk. Ross, who has had a crush on Rachel since high school, asks her out.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasEpisodeTitle"/>
+        <NamedIndividual IRI="#S01E01"/>
+        <Literal>&quot;Pilot&quot;
+&quot;The One Where Monica Gets a Roommate&quot;
+&quot;The One Where It All Began&quot;
+&quot;The First One&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDuration"/>
+        <NamedIndividual IRI="#S01E01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEmissionDate"/>
+        <NamedIndividual IRI="#S01E01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1994-11-22T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEpisodeNumber"/>
+        <NamedIndividual IRI="#S01E01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumberOfEpisodes"/>
+        <NamedIndividual IRI="#Season1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeasonNumber"/>
+        <NamedIndividual IRI="#Season1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumberOfEpisodes"/>
+        <NamedIndividual IRI="#Season10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeasonNumber"/>
+        <NamedIndividual IRI="#Season10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumberOfEpisodes"/>
+        <NamedIndividual IRI="#Season2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeasonNumber"/>
+        <NamedIndividual IRI="#Season2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumberOfEpisodes"/>
+        <NamedIndividual IRI="#Season3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeasonNumber"/>
+        <NamedIndividual IRI="#Season3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumberOfEpisodes"/>
+        <NamedIndividual IRI="#Season4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeasonNumber"/>
+        <NamedIndividual IRI="#Season4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumberOfEpisodes"/>
+        <NamedIndividual IRI="#Season5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeasonNumber"/>
+        <NamedIndividual IRI="#Season5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumberOfEpisodes"/>
+        <NamedIndividual IRI="#Season6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeasonNumber"/>
+        <NamedIndividual IRI="#Season6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumberOfEpisodes"/>
+        <NamedIndividual IRI="#Season7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeasonNumber"/>
+        <NamedIndividual IRI="#Season7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumberOfEpisodes"/>
+        <NamedIndividual IRI="#Season8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeasonNumber"/>
+        <NamedIndividual IRI="#Season8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNumberOfEpisodes"/>
+        <NamedIndividual IRI="#Season9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeasonNumber"/>
+        <NamedIndividual IRI="#Season9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasMaster"/>
+        <ObjectProperty IRI="isMasterOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasEpisode"/>
+        <ObjectProperty IRI="#isEpisodeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasOwner"/>
+        <ObjectProperty IRI="#isOwnerOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasParticipants"/>
+        <ObjectProperty IRI="#participatesIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSeason"/>
+        <ObjectProperty IRI="#isSeasonOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPortraierOf"/>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/portrayer"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="hasMaster"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="isMasterOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasOwner"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isMarriedWith"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isOwnerOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isPortraierOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/portrayer"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isPortraierOf"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/portrayer"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#hasBrother"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#hasLover"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#isFriendOf"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#isMarriedWith"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#livesWith"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CharacterAppearsInEpisode"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="EpisdodeHasCharacter"/>
+        <Class IRI="#TelevisionEpisode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMaster"/>
+        <Class IRI="#Pet"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isMasterOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBrother"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEpisode"/>
+        <Class IRI="#TelevisionSeason"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLover"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOwner"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParticipants"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSeason"/>
+        <Class IRI="#Series"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEpisodeOf"/>
+        <Class IRI="#TelevisionEpisode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMarriedWith"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOwnerOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPortraierOf"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSeasonOf"/>
+        <Class IRI="#TelevisionSeason"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#livesIn"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#livesWith"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#participatesIn"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#takesPlaceIn"/>
+        <Class IRI="#Plot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksIn"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/portrayer"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CharacterAppearsInEpisode"/>
+        <Class IRI="#TelevisionEpisode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="EpisdodeHasCharacter"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMaster"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isMasterOf"/>
+        <Class IRI="#Pet"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBrother"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEpisode"/>
+        <Class IRI="#TelevisionEpisode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLover"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOwner"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParticipants"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSeason"/>
+        <Class IRI="#TelevisionSeason"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEpisodeOf"/>
+        <Class IRI="#TelevisionSeason"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMarriedWith"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOwnerOf"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPortraierOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSeasonOf"/>
+        <Class IRI="#Series"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#livesIn"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#livesWith"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participatesIn"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#takesPlaceIn"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksIn"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/portrayer"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasPetName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasEpisodeSynopsis"/>
+        <Class IRI="#TelevisionEpisode"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasEpisodeTitle"/>
+        <Class IRI="#TelevisionEpisode"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasPetName"/>
+        <Class IRI="#Pet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasPlatformName"/>
+        <Class IRI="#Platform"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBirthdate"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescription"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDuration"/>
+        <Class IRI="#TelevisionEpisode"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEmissionDate"/>
+        <Class IRI="#TelevisionEpisode"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEpisodeNumber"/>
+        <Class IRI="#TelevisionEpisode"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGender"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGenre"/>
+        <Class IRI="#Series"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNationality"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumberOfEpisodes"/>
+        <Class IRI="#TelevisionSeason"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumberOfSeasons"/>
+        <Class IRI="#Series"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSeasonEnd"/>
+        <Class IRI="#TelevisionSeason"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSeasonNumber"/>
+        <Class IRI="#TelevisionSeason"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSeasonStart"/>
+        <Class IRI="#TelevisionSeason"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSynopsis"/>
+        <Class IRI="#Series"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTitle"/>
+        <Class IRI="#Series"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="hasEpisodeSynopsis"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasEpisodeTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasPetName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasPlatformName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBirthdate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDuration"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEmissionDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEpisodeNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGender"/>
+        <Datatype IRI="http://dbpedia.org/ontology/Gender"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGenre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNationality"/>
+        <Datatype IRI="http://dbpedia.org/ontology/County"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumberOfEpisodes"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumberOfSeasons"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSeasonEnd"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSeasonNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSeasonStart"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSynopsis"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CharacterAppearsInEpisode</IRI>
+        <Literal xml:lang="en">This character appears in that episode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EpisdodeHasCharacter</IRI>
+        <Literal xml:lang="en">In this episode appears that character</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasEpisodeSynopsis</IRI>
+        <Literal xml:lang="en">Episode synopsis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasEpisodeTitle</IRI>
+        <Literal xml:lang="en">Episode title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasMaster</IRI>
+        <Literal xml:lang="en">A pet has a master/owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasPlatformName</IRI>
+        <Literal xml:lang="en">Platform name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isMasterOf</IRI>
+        <Literal xml:lang="en">A character may have a pet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Actor</IRI>
+        <Literal>An actor or actress is a person who acts in a dramatic production and who works in film, television, theatre, or radio in that capacity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Actor</IRI>
+        <Literal>Actor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Actor</IRI>
+        <IRI>http://mappings.dbpedia.org/server/ontology/classes/#Actor</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Character</IRI>
+        <Literal xml:lang="en">Is a individual from work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Character</IRI>
+        <Literal>Character</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Character</IRI>
+        <IRI>https://dbpedia.org/ontology/FictionalCharacter</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Event</IRI>
+        <Literal xml:lang="en">Some special happening woth to mention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Friends</IRI>
+        <Literal xml:lang="en">Friends ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Friends</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/Friends</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Friends</IRI>
+        <Literal xml:lang="en">https://friends.fandom.com/wiki/Friends_Wiki</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InSeriesFictionalCharacter</IRI>
+        <Literal xml:lang="en">Inside the Series, there are TV sereies with Characters portrayed by other Characters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InSeriesSeries</IRI>
+        <Literal xml:lang="en">Inside the series, there eixist a TV series that Characters see and work in as actors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#JenniferAniston</IRI>
+        <Literal xml:lang="en">Jennifer Aniston</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#JenniferAniston</IRI>
+        <IRI>https://dbpedia.org/page/Jennifer_Aniston</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Job</IRI>
+        <Literal xml:lang="en">Fictional place where someone works in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en">Human living being</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pet</IRI>
+        <Literal xml:lang="en">Domestic animal that belongs to some character</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Place</IRI>
+        <Literal xml:lang="en">Fictional place where things happens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Platform</IRI>
+        <Literal xml:lang="en">Media platform where the serie was emmited</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Plot</IRI>
+        <Literal xml:lang="en">A plot explanains what happens in a series, season or  episode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Plot</IRI>
+        <Literal>Plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RachelGreen</IRI>
+        <Literal xml:lang="en">Rachel Green instance of Character</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#RachelGreen</IRI>
+        <IRI>https://dbpedia.org/page/Rachel_Green</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Series</IRI>
+        <Literal xml:lang="en">A series is a tv show divided in several episodes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Series</IRI>
+        <Literal xml:lang="en">Series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Series</IRI>
+        <IRI>https://dbpedia.org/ontology/series</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TelevisionEpisode</IRI>
+        <Literal>Episode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#TelevisionEpisode</IRI>
+        <IRI>http://mappings.dbpedia.org/server/ontology/classes/TelevisionEpisode</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TelevisionSeason</IRI>
+        <Literal>Season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#TelevisionSeason</IRI>
+        <IRI>http://mappings.dbpedia.org/server/ontology/classes/TelevisionSeason</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wedding</IRI>
+        <Literal xml:lang="en">Special event where two people get married</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasBirthdate</IRI>
+        <Literal xml:lang="en">The birth date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasBrother</IRI>
+        <Literal xml:lang="en">Has brother</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDescription</IRI>
+        <Literal xml:lang="en">The description of the entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDuration</IRI>
+        <Literal xml:lang="en">The duration in minutes of an episode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasEmissionDate</IRI>
+        <Literal xml:lang="en">The date of emission in TV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasEpisode</IRI>
+        <Literal xml:lang="en">has episode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasEpisodeNumber</IRI>
+        <Literal xml:lang="en">The number of the episode in the season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasGender</IRI>
+        <Literal xml:lang="en">The gender of an artist or character</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasGenre</IRI>
+        <Literal xml:lang="en">The genre of a work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLover</IRI>
+        <Literal xml:lang="en">has lover</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasName</IRI>
+        <Literal xml:lang="en">The name of an entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNationality</IRI>
+        <Literal xml:lang="en">The nationality of a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNumberOfEpisodes</IRI>
+        <Literal xml:lang="en">The total of episodes of a season or series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNumberOfSeasons</IRI>
+        <Literal xml:lang="en">The number of seasons of a series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOwner</IRI>
+        <Literal xml:lang="en">has owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasParticipants</IRI>
+        <Literal xml:lang="en">An event has participants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasParticipants</IRI>
+        <Literal xml:lang="en">hasParticipant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSeason</IRI>
+        <Literal xml:lang="en">A series have one or more seasons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSeason</IRI>
+        <Literal xml:lang="en">hasSeason</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSeasonEnd</IRI>
+        <Literal xml:lang="en">The date of emision of the last episode of a season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSeasonNumber</IRI>
+        <Literal xml:lang="en">The number of season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSeasonStart</IRI>
+        <Literal xml:lang="en">The date of season start</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSynopsis</IRI>
+        <Literal xml:lang="en">Synopsis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTitle</IRI>
+        <Literal xml:lang="en">Title that defines a series, season or episode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isEpisodeOf</IRI>
+        <Literal xml:lang="en">is episode of season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFriendOf</IRI>
+        <Literal xml:lang="en">these are friends</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isMarriedWith</IRI>
+        <Literal xml:lang="en">Someone who is married with another</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isOwnerOf</IRI>
+        <Literal xml:lang="en">owns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPortraierOf</IRI>
+        <Literal xml:lang="en">An Actor representing a fictional character</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPortraierOf</IRI>
+        <Literal xml:lang="en">isPortrayerOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSeasonOf</IRI>
+        <Literal xml:lang="en">An episode is part of a Season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSeasonOf</IRI>
+        <Literal xml:lang="en">isSeasonOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#livesIn</IRI>
+        <Literal xml:lang="en">Someone lives in a place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#livesWith</IRI>
+        <Literal xml:lang="en">lives together with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#participatesIn</IRI>
+        <Literal xml:lang="en">An agent participates in an event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#takesPlaceIn</IRI>
+        <Literal xml:lang="en">this happens in that place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#worksIn</IRI>
+        <Literal xml:lang="en">this individual works in that place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://dbpedia.org/ontology/portrayer</IRI>
+        <Literal xml:lang="en">To represent dramatically, as on the stage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://dbpedia.org/ontology/portrayer</IRI>
+        <Literal xml:lang="en">portrayer</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
